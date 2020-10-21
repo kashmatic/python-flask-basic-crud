@@ -3,13 +3,6 @@
 ## Postgres DB
 ```
 docker run --rm -d \
--p 5432:5432 \
--e POSTGRES_DB=adb \
--e POSTGRES_USER=auser \
--e POSTGRES_PASSWORD=apassword \
-postgres
-
-docker run --rm -d \
 -p 8080:3306 \
 -e MYSQL_DATABASE=adb \
 -e MYSQL_USER=auser \
@@ -31,4 +24,3 @@ flask db init     ## creates migrations directory
 flask db migrate
 flask db upgrade
 ```
-# python-flask-basic-crud
